@@ -9,7 +9,7 @@ const forecast = (address, callback) => {
         }else if(body.error){
             callback('Unable to find location', undefined) 
         }else{
-            callback(undefined, 'Current condition is '+body.days[0].conditions +'. The current temperature is ' + body.days[0].temp + '. The maximum temperature today is ' + body.days[0].tempmax + '. The minimum temperature today is ' + body.days[0].tempmin)
+            callback(undefined, 'Live condition is '+body.days[0].conditions +'. The current temperature is ' + body.days[0].temp + '. The maximum temperature today is ' + body.days[0].tempmax + '. The minimum temperature today is ' + body.days[0].tempmin)
 
         }
 
